@@ -1,0 +1,17 @@
+use("platzi_store")
+
+
+db.products.updateOne(
+  //query -> who will be updated
+  { _id: ObjectId('6869cc676302a28f68f40783')},
+  // change -> how will be update
+  { 
+    $set: {
+      name: "Product name changed 4"
+    },
+    $inc: {
+      price: -20
+    }
+})
+
+db.products.find()

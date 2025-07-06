@@ -1,0 +1,25 @@
+use("platzi_store")
+
+// db.inventory.updateOne({
+//   _id: 4
+// }, {
+//   $push: {
+//     tags: "important"
+//   }
+// })
+
+// db.inventory.updateMany({}, {
+//   $pull: {
+//     tags: {
+//       $in: ["school", "appliance"]
+//     }
+//   }
+// })
+
+db.inventory.updateMany({}, {
+  $push: {
+    tags: {
+      $each: ["masive", "importantless"]
+    }
+  }
+})

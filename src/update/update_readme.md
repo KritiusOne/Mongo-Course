@@ -52,3 +52,7 @@ db.zips.updateMany({
 3. ```$unset:``` It removes the indicated attribute
 
 4. ```$rename:``` It changes the attribute's name indicates. It doesn't change the value, it only changes the name.
+
+5. ```$push:``` It adds a new element to array attributes. It's like the push method in arrays. We can use $each to add many elements
+
+6. ```$pull:``` It removes elements from array attributes. We can use $in to remove many elements

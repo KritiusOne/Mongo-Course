@@ -1,6 +1,6 @@
 # Insert instructions
 
-## collection().insertOne({...})
+## collection.insertOne({...})
 
 This instruction creates only one document. 
 If collection doesn't exist yet, it will be created first.
@@ -20,7 +20,7 @@ By default, MongoDB generates Ids like follow:
     }
     ```
 
-## collection().insertMany([{...}])
+## collection.insertMany([{...}])
 
 This intruction creates many documents at once. It receives an array of documents, like this:
 
